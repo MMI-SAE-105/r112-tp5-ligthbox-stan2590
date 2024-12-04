@@ -1,3 +1,23 @@
 /**
 * Lightbox
 */
+details {
+    position: relative;
+    width: 130px; /* Ajout du point-virgule manquant */
+}
+
+details[open] {
+    width: 300px;
+}
+
+details > summary {
+    position: absolute;
+    top: 0; /* Ajout du point-virgule manquant */
+    left: 0;
+}
+
+details > div {
+    padding-left: 130px;
+    width: 170px; /* Ajout du point-virgule manquant */
+}
+
