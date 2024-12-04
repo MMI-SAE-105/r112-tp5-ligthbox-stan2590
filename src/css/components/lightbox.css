@@ -33,6 +33,7 @@ details > div {
     justify-content: center;
     align-items: center;
     z-index: 1000;
+    animation: background-color 3s ease-out;
 }
 
 #lightbox img {
@@ -40,7 +41,7 @@ details > div {
     max-height: 90%;
     border: 30px solid white;
     border-radius: 10px;
-    
+    animation: zoomIn 3s ease-out;
 }
 
 #lightbox.open {
@@ -53,8 +54,27 @@ ul li img {
     transition: transform 0.2s ease;
 }
 
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.1); 
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1); 
+        opacity: 1;
+    }
+}
 
-
+@keyframes background-color {
+    0% {
+        transform: scale(0.5); 
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1); 
+        opacity: 1;
+    }
+}
 
 
 
